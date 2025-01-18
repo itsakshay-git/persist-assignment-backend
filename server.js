@@ -64,7 +64,7 @@ app.post("/api/transcribe-video", upload.single("video"), async (req, res) => {
     let transcriptText = null;
     let retryCount = 0;
 
-    while (!transcriptText && retryCount < 10) {
+    while (!transcriptText && retryCount < 15) {
       const jobStatus = await client.getJobDetails(job.id);
       console.log("Job Status:", jobStatus.status);
 
