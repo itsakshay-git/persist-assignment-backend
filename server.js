@@ -32,7 +32,7 @@ const ref = db.ref("transcripts");
 
 app.use(
   cors({
-    origin: "https://aistoriesgenerator.netlify.app/",
+    origin: "https://aistoriesgenerator.netlify.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
